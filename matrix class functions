@@ -1,0 +1,56 @@
+void Check (int m[][3]);
+
+class matrix{
+
+    public:
+    int s[3][3]= {{5,3,4}, {6,7,8},{9,1,2}};
+    int z;
+
+    public:
+    matrix();
+    int getS(int row, int col);
+    void readS();
+    void fillSmallMatrix(int a[3][3]);
+    void Randomization (matrix a[3][3]);
+    //I ahve not fixed the randomization function now that I use matrix class
+    //but I should have time to correct that this weekend
+
+
+
+
+
+};
+
+
+
+
+
+matrix::matrix(){
+    s[3][3];
+}
+
+void matrix::fillSmallMatrix(int a[3][3]){
+
+    for (int i = 0; i < 3; i++){
+        for (int j = 0; j < 3; j++){
+                s[i][j] = a[i][j];
+        }
+    }
+}
+
+
+int matrix::getS(int row, int col){
+    int x;
+    x = s[row][col];
+    return x;
+}
+
+void matrix::readS(){
+
+    for (int i = 0; i < 3; i++){
+        for (int j = 0; j < 3; j++){
+            cout << s[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
