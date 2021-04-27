@@ -1,0 +1,20 @@
+    int r1, r2, r3, r4, r5, r6, r7, r8, r9;
+    for (int k = 0; k < 3; k++){
+
+        int i = 0;
+            for (int j = 0; j < 3; j++){
+                r1 = m[k][i].getS(j,0);
+                r2 = m[k][i].getS(j,1);
+                r3 = m[k][i].getS(j,2);
+                r4 = m[k][i+1].getS(j,0);
+                r5 = m[k][i+1].getS(j,1);
+                r6 = m[k][i+1].getS(j,2);
+                r7 = m[k][i+2].getS(j,0);
+                r8 = m[k][i+2].getS(j,1);
+                r9 = m[k][i+2].getS(j,2);
+
+                cout << r1 << r2 << r3;
+                cout << r4 << r5 << r6;
+                cout << r7 << r8 << r9 << endl;
+            }
+        }
