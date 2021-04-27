@@ -1,0 +1,38 @@
+#ifndef MATRIXSWAP_H_INCLUDED
+#define MATRIXSWAP_H_INCLUDED
+
+#include <iostream>
+#include <ostream>
+#include<time.h>
+
+using namespace std;
+
+
+
+
+
+void Check (int m[][3]);
+
+class matrix{
+
+    private:
+    int s[3][3]= {{5,3,4}, {6,7,8},{9,1,2}};
+    int z;
+
+    public:
+    matrix();
+    int getS(int row, int col);
+    void readS();
+    void fillSmallMatrix(int a[3][3]);
+
+
+
+};
+
+matrix Random(matrix a[3][3]);
+
+bool check(matrix a[3][3]);
+
+//void display();
+
+#endif MATRIXSWAP_H_INCLUDED
