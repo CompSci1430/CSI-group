@@ -1,0 +1,91 @@
+class matrix{
+
+    public:
+    int s[3][3]= {{5,3,4}, {6,7,8},{9,1,2}};
+    int z;
+
+    public:
+    matrix();
+    int getS(int row, int col);
+    void readS();
+    void fillSmallMatrix(int a[3][3]);
+
+    void setS(int row, int col, int newNum);
+
+};
+
+matrix Random(matrix a[3][3]);
+
+bool check(matrix a[3][3]);
+
+void setM(matrix m[3][3], int row, int col, int newNum);
+
+
+
+
+
+
+
+
+
+void matrix::setS(int row, int col, int newNum){
+
+    s[row][col] = newNum;
+
+}
+
+void setM(matrix m[3][3], int row, int col, int newNum){
+
+    int srow;
+    int scol;
+
+    if ((row == 1) || (row == 4) || (row == 7)) {
+        srow = 0;
+    }
+    if ((row == 2) || (row == 5) || (row == 8)) {
+        srow = 1;
+    }
+    if ((row == 3) || (row == 6) || (row == 9)) {
+        srow = 2;
+    }
+
+    if ((col == 1) || (col == 4) || (col == 7)) {
+        scol = 0;
+    }
+    if ((col == 2) || (col == 5) || (col == 8)) {
+        scol = 1;
+    }
+    if ((col == 3) || (col == 6) || (col == 9)) {
+        scol = 2;
+    }
+
+
+    if ((row <= 3) && (col <= 3)){
+        m[0][0].setS(srow,scol, newNum);
+    }
+    else if ((row <= 3) && (col <= 6)){
+        m[0][1].setS(srow,scol, newNum);
+    }
+    else if ((row <= 3) && (col <= 9)){
+        m[0][2].setS(srow,scol, newNum);
+    }
+    else if ((row <= 6) && (col <= 3)){
+        m[1][0].setS(srow,scol, newNum);
+    }
+    else if ((row <= 6) && (col <= 6)){
+        m[1][1].setS(srow,scol, newNum);
+    }
+    else if ((row <= 6) && (col <= 9)){
+        m[1][2].setS(srow,scol, newNum);
+    }
+    else if ((row <= 9) && (col <= 3)){
+        m[2][0].setS(srow,scol, newNum);
+    }
+    else if ((row <= 9) && (col <= 6)){
+        m[2][1].setS(srow,scol, newNum);
+    }
+    else if ((row <= 9) && (col <= 9)){
+        m[2][2].setS(srow,scol, newNum);
+    }
+
+}
