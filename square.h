@@ -2,19 +2,35 @@
 #define SQUARE_H_INCLUDED
 #include <iostream>
 #include <cmath>
+#include <time.h>
 
 using namespace std;
 
-class BaseSquare
-{
-    public:
-        int s1[3][3], s2[3][3], s3[3][3];
-        int s4[3][3], s5[3][3], s6[3][3];
-        int s7[3][3], s8[3][3], s9[3][3];
-    private:
-        void populateArrays();
 
+
+class matrix{
+
+    private:
+    int s[3][3]= {{5,3,4}, {6,7,8},{9,1,2}};
+    int z;
+
+    public:
+    //could do more
+    matrix();
+    int getS(int row, int col);
+    void readS();
+    void fillSmallMatrix(int a[3][3]);
 };
 
+//UPDATAED: fills the big matrix to be used in main
+matrix fillBigMatirix(matrix a[3][3]);
+
+//UPDATED: displays the big matrix
+//TODO: update to put underscores where
+void display(matrix a[3][3]);
+
+matrix Random(matrix a[3][3]);
+
+bool check(matrix a[3][3]);
 
 #endif // SQUARE_H_INCLUDED
