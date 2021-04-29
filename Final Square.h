@@ -16,9 +16,6 @@ Date Last Modified: 4/29/2021
 #include <iomanip>
 
 using namespace std;
-
-
-
 class matrix{
 
     private:
@@ -34,20 +31,71 @@ class matrix{
     void fillSmallMatrix(int a[3][3]);
 };
 
-//UPDATAED: fills the big matrix to be used in main
+/*
+description: Fills the big array matrix that holds the actual square
+return: nothing
+precondition: all of the arrays exist
+postcondition: The big sudoku square will be created and possible to complete
+*/
 matrix fillBigMatirix(matrix a[3][3]);
 
-//UPDATED: displays the big matrix
-//TODO: update to put underscores where
+/*
+description: displays the sudoku square
+return: nothing
+precondition: all data in the squre is valid 
+postcondition: the square will be displayed to the screen
+*/
 void display(matrix a[3][3]);
 
+/*
+description:
+return:
+precondition:
+postcondition:
+*/
 matrix Random(matrix a[3][3]);
+/*
+description:
+return:
+precondition:
+postcondition:
+*/
 void setM(matrix m[3][3], int row, int col, int newNum);
+/*
+description:
+return:
+precondition:
+postcondition:
+*/
 int getM(matrix m[3][3], int row, int col);
+/*
+description:
+return:
+precondition:
+postcondition:
+*/
 bool check(matrix a[3][3]);
 
+/*
+description:
+return:
+precondition:
+postcondition:
+*/
 matrix MakePuzzle(matrix p[3][3]);
+/*
+description:
+return:
+precondition:
+postcondition:
+*/
 matrix cipher(matrix a[3][3]);
 
+/*
+description:
+return:
+precondition:
+postcondition:
+*/
 void PlayGame(matrix p[3][3]);
 #endif // SQUARE_H_INCLUDED
