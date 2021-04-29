@@ -97,6 +97,7 @@ while(addsUp == false){
 
 }
 
+cout << "THE END" << endl;
 
 return 0;
 
