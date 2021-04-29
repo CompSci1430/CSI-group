@@ -48,31 +48,32 @@ postcondition: the square will be displayed to the screen
 void display(matrix a[3][3]);
 
 /*
-description:
-return:
-precondition:
-postcondition:
+description: series of random transformations that will
+             not impact check, but will create a new board
+return: matrix
+precondition: matrix (3x3 of 3x3's)
+postcondition: a new game board is randomly created
 */
 matrix Random(matrix a[3][3]);
 /*
-description:
-return:
-precondition:
-postcondition:
+description: reasign or set position in 9x9 matrix
+return: void (matrix b/c uses sets() function inside)
+precondition: big matrix, row, column and new number
+postcondition: big matrix will have a new or changed value
 */
 void setM(matrix m[3][3], int row, int col, int newNum);
 /*
-description:
-return:
-precondition:
-postcondition:
+description: Get integer in specified position
+return: int
+precondition: 9x9 matrix, row and column
+postcondition: the integer in the specified position of the 9x9
 */
 int getM(matrix m[3][3], int row, int col);
 /*
-description:
-return:
-precondition:
-postcondition:
+description: check each row and column = 45
+return: bool
+precondition: 9x9 matrix (3x3 of 3x3's)
+postcondition: true if all 45, false otherwise
 */
 bool check(matrix a[3][3]);
 
@@ -84,10 +85,10 @@ postcondition:
 */
 matrix MakePuzzle(matrix p[3][3]);
 /*
-description:
-return:
-precondition:
-postcondition:
+description: shifts the digits to disguise the game board
+return: matirx
+precondition: we have a full matrix game board
+postcondition: a game board that still works but is disguised
 */
 matrix cipher(matrix a[3][3]);
 
