@@ -1,4 +1,12 @@
-
+/*
+Author: Kevin Gibson, Brennan Chan, Cole Hogan, Stephanie Yue, Adam Kolodziej
+Assignment Title: Sudoku Game
+Assignment Description: the program auto generates a sudoku square and the user fills in
+                        the underscores 
+Due Date: 4/29/2021
+Date Created: 3/30/2021
+Date Last Modified: 4/29/2021
+*/
 #include "square.h"
 
 matrix::matrix(){
