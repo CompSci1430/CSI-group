@@ -143,26 +143,42 @@ bool check(matrix a[3][3]){
 
 void display(matrix a[3][3])
 {
-    int r1, r2, r3, r4, r5, r6, r7, r8, r9;
+    int r[10];
     for (int k = 0; k < 3; k++){
 
         int i = 0;
         for (int j = 0; j < 3; j++)
         {
-                r1 = a[k][i].getS(j,0);
-                r2 = a[k][i].getS(j,1);
-                r3 = a[k][i].getS(j,2);
-                r4 = a[k][i+1].getS(j,0);
-                r5 = a[k][i+1].getS(j,1);
-                r6 = a[k][i+1].getS(j,2);
-                r7 = a[k][i+2].getS(j,0);
-                r8 = a[k][i+2].getS(j,1);
-                r9 = a[k][i+2].getS(j,2);
-                //if()
+                r[1] = a[k][i].getS(j,0);
+                r[2] = a[k][i].getS(j,1);
+                r[3] = a[k][i].getS(j,2);
+                r[4] = a[k][i+1].getS(j,0);
+                r[5] = a[k][i+1].getS(j,1);
+                r[6] = a[k][i+1].getS(j,2);
+                r[7] = a[k][i+2].getS(j,0);
+                r[8] = a[k][i+2].getS(j,1);
+                r[9] = a[k][i+2].getS(j,2);
+                for(int b = 1; b < 10; b++)
+                {
+                    if(r[b] == 0)
+                    {
+                        cout << "_";
+                    }
+                    else
+                    {
+                        cout << r[b];
+                    }
+                    if(b == 3 || b == 6)
+                    {
+                        cout << "|";
+                    }
+                    else
+                    {
+                        cout << " ";
+                    }
 
-                cout << r1 << " " << r2 << " " << r3 << "|";
-                cout << r4 << " " << r5 << " " << r6 << "|";
-                cout << r7 << " " << r8 << " " << r9 << endl;
+                }
+                cout << endl;
         }
         cout << "-----------------" << endl;
     }
