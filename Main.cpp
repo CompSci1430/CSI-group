@@ -1,5 +1,30 @@
+/*
+Author: Kevin Gibson, Brennan Chan, Cole Hogan, Stephanie Yue, Adam Kolodziej
+Assignment Title: Sudoku Game
+Assignment Description: the program auto generates a sudoku square and the user fills in
+                        the underscores 
+Due Date: 4/29/2021
+Date Created: 3/30/2021
+Date Last Modified: 4/29/2021
 
+Data Abstraction:
+                 initializes the arrays and all of the objects uilized in creating
+                 the sudoku square 
+Input:
+                 user inputs the row, col and number they would like to replace 
 
+Process:
+                 the program takes the user data reads it and determins if the 
+                 square is completed or not 
+
+Output:
+                the sudoku square and all of the user inputs are displayed
+
+Assumptions:
+                the user will enter a number not already preoccupied 
+                the user will enter a valid col and row 
+                the user will not edit the numbers allready in the sudoku square
+*/
 #include <iostream>
 
 #include "square.h"
@@ -94,13 +119,5 @@ int main()
     }while(PlayAgain);
     
     cout << "Thanks for playing our game";
-        
-    
-
-   
-    
-    
-
-
     return 0;
 }
