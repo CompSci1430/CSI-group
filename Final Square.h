@@ -24,9 +24,37 @@ class matrix{
 
     public:
     //could do more
+  
+/*
+description: displays the sudoku square
+return: nothing
+precondition: all data in the squre is valid 
+postcondition: the square will be displayed to the screen
+*/
     matrix();
+  
+/*
+description: displays the sudoku square
+return: nothing
+precondition: all data in the squre is valid 
+postcondition: the square will be displayed to the screen
+*/
     int getS(int row, int col);
+  
+/*
+description: displays the sudoku square
+return: nothing
+precondition: all data in the squre is valid 
+postcondition: the square will be displayed to the screen
+*/
     void setS(int row, int col, int newNum);
+  
+/*
+description: displays the sudoku square
+return: nothing
+precondition: all data in the squre is valid 
+postcondition: the square will be displayed to the screen
+*/
     void readS();
     void fillSmallMatrix(int a[3][3]);
 };
