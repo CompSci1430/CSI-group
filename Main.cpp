@@ -54,50 +54,10 @@ int main()
     stringstream Transfer;
     
 
-        
+     
     fillBigMatirix(c);
-    //display(c);
     check(c);
-/*
-    x = s1.getS(0,0);
-    cout << x << endl;
-    cout << "READ TOP LEFT" << endl;
-    s2.readS();
-    x = s2.getS(0,0);
-    cout << x << endl;
 
-    b[0][0] = m[0][0];
-    test = b[0][0];
-    cout << "read test" << endl;
-    test.readS();
-    z[3][3] = Random(m);
-    
-    
-    
-    z[0][0] = m[0][0];
-    test = z[0][0];
-    cout << "read test z" << endl;
-    test.readS();
-    cout << endl;
-    test = puzzle[0][1];
-    test.readS();
-
-
-    cout << endl << endl;
-
-    x = m[0][0].getS(2,2);
-    cout << x << endl;
-    
-
-
-    addsUp = check(c);
-
-
-    cout << "does it add up? " << addsUp;
-
-    cout << endl << endl;
-
-*/
    
 
 //Play the game
@@ -119,7 +79,7 @@ int main()
             AreURight = check(c);
         }while(!AreURight);
         cout << "CONGRATULATIONS YOU SMARTY!"<< endl;
-        cout << "If you want to play again type 1: ";
+        cout << "If you want to play again type the number 1: ";
         cin >> again;
         cout << again << endl;
         if (again == "1"){
