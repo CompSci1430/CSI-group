@@ -78,10 +78,10 @@ postcondition: true if all 45, false otherwise
 bool check(matrix a[3][3]);
 
 /*
-description:
-return:
-precondition:
-postcondition:
+description: Program makes the puzzle for the user
+return: returns the puzzle matrix
+precondition: There is a template shuffled matrix
+postcondition: There is a copied matrix for user use
 */
 matrix MakePuzzle(matrix p[3][3]);
 /*
@@ -93,10 +93,10 @@ postcondition: a game board that still works but is disguised
 matrix cipher(matrix a[3][3]);
 
 /*
-description:
-return:
-precondition:
-postcondition:
+description: Lets user interact with the matrix
+return: void
+precondition: There is a puzzle matrix 
+postcondition: User can input into and interact with the matrix
 */
 void PlayGame(matrix p[3][3]);
 #endif // SQUARE_H_INCLUDED
