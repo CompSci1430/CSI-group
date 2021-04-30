@@ -56,9 +56,9 @@ int main()
 
         
     fillBigMatirix(c);
-    display(c);
+    //display(c);
     check(c);
-
+/*
     x = s1.getS(0,0);
     cout << x << endl;
     cout << "READ TOP LEFT" << endl;
@@ -97,7 +97,7 @@ int main()
 
     cout << endl << endl;
 
-
+*/
    
 
 //Play the game
