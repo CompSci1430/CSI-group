@@ -106,8 +106,10 @@ int main()
   cout << "type the row, then the column then your number." << endl;
   cout << endl;
   cout << "If you make a mistake and want to backspace ";
+  cout << "If you correctly answer a puzzle, a victory message is given." << endl;
   cout << "Type the row and column then a _ (underscore) symbol." << endl;
   cout << "Hope you enjoy these puzzles." << endl;
+  
     do{
         MakePuzzle(c);
         display(c);
