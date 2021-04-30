@@ -101,6 +101,13 @@ int main()
    
 
 //Play the game
+  cout << "How to play this Game: " << endl;
+  cout << "To find input a number in the grid ";
+  cout << "type the row, then the column then your number." << endl;
+  cout << endl;
+  cout << "If you make a mistake and want to backspace ";
+  cout << "Type the row and column then a _ (underscore) symbol." << endl;
+  cout << "Have fun." << endl;
     do{
         MakePuzzle(c);
         display(c);
