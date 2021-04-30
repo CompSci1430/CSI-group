@@ -39,7 +39,7 @@ int main()
     matrix puzzle[3][3];
     matrix s1, s2, s3, s4, test;
     matrix s5, s6, s7, s8, s9, z[3][3];
-    int x;
+    //int x;
 
     matrix c[3][3];
     bool addsUp = false;
